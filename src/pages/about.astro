@@ -5,6 +5,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>MedicValle</title>
+    <style>
+      h1 {
+        color: purple;
+        font-size: 4rem;
+      }
+      .skill {
+    color: green;
+    font-weight: bold;
+  }
+    </style>
   </head>
   <body>
     <a href="/">Inicio</a>
@@ -18,5 +28,11 @@
     <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
 
     <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+  
+    <p>My skills are:</p>
+<ul>
+  {skills.map((skill) => <li class="skill">{skill}</li>)}
+</ul>
+
   </body>
 </html>
